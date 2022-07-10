@@ -1,0 +1,21 @@
+.width{width:200px}
+.single {
+  width: 100%;
+}
+.example-card {
+  
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.active-serum-bg{
+    background-color: lightcoral;
+}
+
+.active-csf-bg{
+    background-color: mediumaquamarine;
+}
+.example-button-toggle-label {
+  display: inline-block;
+  margin: 16px;
+}

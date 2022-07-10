@@ -1,0 +1,39 @@
+<div class="container-fluid">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Pending Samples</a>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="dispatchStation()">Dispatch Station</button>
+        </div>
+    </nav>
+    
+  
+  <table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Block ID</th>
+            <th scope="col">Sample ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Test</th>   
+            <th scope="col">Specimen</th>
+            <th scope="col">Fixative</th>
+            <th scope="col">Report</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let block of pndng_blocks ">
+            <td>{{block.block_id}}</td>
+            <td>{{block.sd.sample_id}}</td>
+            <td>{{block.sd.pd.name}}</td>
+            <td>{{block.sd.test}}</td>
+            <td>{{block.sd.specimen}}</td>
+            <td>{{block.sd.fixative}}</td>
+            <td>{{block.remarks}}</td>
+        </tr>
+  
+    </tbody>
+  </table>
+  </div>
+  
